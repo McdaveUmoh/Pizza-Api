@@ -23,7 +23,7 @@ def create_app(config=config_dict['dev']):
     
     api = Api(app)
     
-    api.add_namespace(order_namespace, path='/order')
+    api.add_namespace(order_namespace, path='/orders')
     api.add_namespace(auth_namespace, path='/auth')
     
     @app.shell_context_processor
