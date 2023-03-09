@@ -38,7 +38,7 @@ class OrderGetCreate(Resource):
     @jwt_required()
     def post(self):
         """
-            place an order
+            place an order for the pzza app
         """
         
         username = get_jwt_identity()
